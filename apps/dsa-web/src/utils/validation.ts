@@ -15,7 +15,8 @@ export const validateStockCode = (value: string): ValidationResult => {
   const patterns = [
     /^\d{6}$/, // A 股 6 位数字
     /^(SH|SZ)\d{6}$/, // A 股带交易所前缀
-    /^\d{5}$/, // 港股 5 位数字
+    /^\d{5}$/, // 港股 5 位数字（无前缀）
+    /^HK\d{5}$/, // 港股 HK 前缀格式，如 HK00700、HK01810
     /^[A-Z]{1,6}(\.[A-Z]{1,2})?$/, // 美股常见 Ticker
   ];
 
