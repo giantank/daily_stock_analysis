@@ -53,15 +53,15 @@ model_list:
       api_key: "os.environ/DEEPSEEK_API_KEY"
 
   # --- Google Gemini (原生，多 Key 负载均衡) ---
-  - model_name: gemini/gemini-3.1-flash
+  - model_name: gemini/gemini-2.5-flash
     litellm_params:
-      model: gemini/gemini-3.1-flash
+      model: gemini/gemini-2.5-flash
       api_key: "os.environ/GEMINI_API_KEY_1"
 
-  - model_name: gemini/gemini-3.1-pro
+  - model_name: gemini/gemini-2.5-flash
     litellm_params:
-      model: gemini/gemini-3.1-pro
-      api_key: "os.environ/GEMINI_API_KEY_1"
+      model: gemini/gemini-2.5-flash
+      api_key: "os.environ/GEMINI_API_KEY_2"
 
   # --- Anthropic Claude (原生) ---
   # - model_name: anthropic/claude-3-5-sonnet-20241022
